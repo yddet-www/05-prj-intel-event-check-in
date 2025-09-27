@@ -157,6 +157,137 @@ button .fas {
   margin-right: 10px;
 }
 
+/* Attendee List Styles */
+.attendee-list-section {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.attendee-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.attendee-list-header h3 {
+  color: #64748b;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+}
+
+.clear-data-btn {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.clear-data-btn:hover {
+  background-color: #dc2626;
+  transform: translateY(-1px);
+}
+
+.clear-data-btn i {
+  font-size: 10px;
+}
+
+.info-message {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border-left: 4px solid #0ea5e9;
+}
+
+.attendee-list-header i {
+  color: #0071c5;
+  font-size: 18px;
+}
+
+.attendee-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.no-attendees {
+  text-align: center;
+  color: #94a3b8;
+  font-style: italic;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 12px;
+}
+
+.team-attendees {
+  border-radius: 12px;
+  padding: 15px;
+  background-color: #f8fafc;
+}
+
+.team-attendees.water {
+  background-color: #e8f7fc;
+  border-left: 4px solid #0071c5;
+}
+
+.team-attendees.zero {
+  background-color: #ecfdf3;
+  border-left: 4px solid #10b981;
+}
+
+.team-attendees.power {
+  background-color: #fff7ed;
+  border-left: 4px solid #f59e0b;
+}
+
+.team-attendees-header {
+  font-weight: 600;
+  color: #475569;
+  margin-bottom: 12px;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attendee-items {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.attendee-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.attendee-name {
+  font-weight: 500;
+  color: #2c3e50;
+}
+
+.check-in-time {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 400;
+}
+
 .attendance-header i {
   font-size: 22px;
   margin-right: 8px;
@@ -374,5 +505,26 @@ select {
 
   .teams-grid {
     grid-template-columns: 1fr;
+  }
+
+  .attendee-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .check-in-time {
+    font-size: 12px;
+  }
+
+  .attendee-list-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .clear-data-btn {
+    width: 100%;
+    justify-content: center;
   }
 }
